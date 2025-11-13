@@ -580,6 +580,27 @@ section:not(.hero)::before {
     transform: scale(1.1);
 }
 
+/* Specific styles for different platforms */
+.itch-link {
+    background: linear-gradient(135deg, #fa5c5c, #ff7b7b) !important;
+    color: var(--color-white) !important;
+    font-size: 24px !important;
+}
+
+.steam-link {
+    background: linear-gradient(135deg, #1b2838, #2a475e) !important;
+    color: var(--color-white) !important;
+    font-size: 24px !important;
+}
+
+.itch-link:hover {
+    background: linear-gradient(135deg, #e54545, #ff6666) !important;
+}
+
+.steam-link:hover {
+    background: linear-gradient(135deg, #0f1419, #1e3a52) !important;
+}
+
 .project-content {
     padding: var(--spacing-xl);
 }

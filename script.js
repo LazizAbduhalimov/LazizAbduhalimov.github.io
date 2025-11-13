@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeMobileMenu();
     initializeProjectFilters();
     initializeSocialCards();
+    initializePlatformIcons();
 });
 
 // Mobile Menu Toggle
@@ -458,5 +459,32 @@ function createConfetti() {
         easing: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
     }).addEventListener('finish', () => {
         document.body.removeChild(confetti);
+    });
+}
+
+// Initialize Platform Icons
+function initializePlatformIcons() {
+    const projectLinks = document.querySelectorAll('.project-link');
+    
+    projectLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        const icon = link.querySelector('i');
+        
+        if (href && icon) {
+            // Remove existing classes
+            link.classList.remove('itch-link', 'steam-link');
+            icon.classList.remove('fab', 'fa-itch-io', 'fa-steam', 'fas', 'fa-external-link-alt');
+            
+            if (href.includes('itch.io')) {
+                link.classList.add('itch-link');
+                icon.classList.add('fab', 'fa-itch-io');
+            } else if (href.includes('steam')) {
+                link.classList.add('steam-link');
+                icon.classList.add('fab', 'fa-steam');
+            } else {
+                // Fallback to generic external link icon
+                icon.classList.add('fas', 'fa-external-link-alt');
+            }
+        }
     });
 }
