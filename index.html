@@ -1,334 +1,215 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laziz Abduhalimov - Game Developer</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Portfolio of Laziz Abduhalimov, Unity game developer focused on tactical, roguelike, mobile, and web games.">
+    <title>Laziz Abduhalimov | Game Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">Laziz Abduhalimov</span>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Главная</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">О разработке</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Проекты</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Контакты</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+    <header class="site-header">
+        <a href="#home" class="brand" aria-label="Laziz Abduhalimov home">
+            <span class="brand-mark">LA</span>
+            <span>Laziz Abduhalimov</span>
+        </a>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-name">
-                    <span class="name-greeting">Привет, я</span>
-                    <h1 class="hero-name-main">Laziz Abduhalimov</h1>
-                    <span class="name-title">Game Developer</span>
-                </div>
-                <h2 class="hero-subtitle">
-                    <span class="subtitle-line">Создаю игры</span>
-                    <span class="subtitle-line">которые вдохновляют</span>
-                </h2>
-                <p class="hero-description">
-                    Независимый разработчик игр с фокусом на создание увлекательного игрового опыта. 
-                    Специализируюсь на Unity, мобильных платформах и инновационном геймдизайне.
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Unity Developer / Systems / Game Feel</p>
+                <h1>I build game ideas into finished experiences.</h1>
+                <p class="hero-text">
+                    Indie game developer focused on Unity, PC, web, and mobile projects.
+                    I like tactical decisions, readable systems, and games that feel good from the first input.
                 </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">Посмотреть проекты</a>
-                    <a href="#contact" class="btn btn-secondary">Связаться</a>
+                <div class="hero-actions">
+                    <a class="button primary" href="#projects">View projects</a>
+                    <a class="button secondary" href="mailto:lazizabduhalimov35@gmail.com">Contact me</a>
                 </div>
             </div>
-            <div class="hero-visual">
-                <div class="game-icons">
-                    <div class="icon-item" data-delay="0">🎮</div>
-                    <div class="icon-item" data-delay="200">🚀</div>
-                    <div class="icon-item" data-delay="400">⭐</div>
-                    <div class="icon-item" data-delay="600">🎯</div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">О разработке игр</h2>
-                <p class="section-subtitle">Мой подход к созданию игр</p>
-            </div>
-            <div class="about-content">
-                <div class="about-cards">
-                    <div class="about-card">
-                        <div class="card-icon">
-                            <i class="fas fa-desktop"></i>
+            <aside class="hero-panel" aria-label="Featured game">
+                <div class="panel-top">
+                    <span>Featured</span>
+                    <span>Steam</span>
+                </div>
+                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3179460/header.jpg?t=1759786981" alt="Ritualist game key art">
+                <div class="panel-bottom">
+                    <h2>Ritualist</h2>
+                    <p>Dark fantasy action-roguelike with fast combat and build-driven replayability.</p>
+                </div>
+            </aside>
+        </section>
+
+        <section id="about" class="about section-band">
+            <div class="section-label">Profile</div>
+            <div class="about-grid">
+                <h2>Developer with a gameplay-first mindset.</h2>
+                <div class="about-copy">
+                    <p>
+                        I work across PC, browser, and mobile games, from prototypes made in tight jams
+                        to larger systems with multiplayer, procedural maps, combat loops, and progression.
+                    </p>
+                    <div class="stats">
+                        <div>
+                            <strong>Unity</strong>
+                            <span>Main engine</span>
                         </div>
-                        <h3>ПК проекты</h3>
-                        <p>Создаю игры и приложения для настольных платформ с богатым функционалом.</p>
-                    </div>
-                    <div class="about-card">
-                        <div class="card-icon">
-                            <i class="fas fa-globe"></i>
+                        <div>
+                            <strong>PC / Web / Mobile</strong>
+                            <span>Platforms</span>
                         </div>
-                        <h3>Веб игры</h3>
-                        <p>Создаю интерактивные браузерные игры с использованием современных веб-технологий.</p>
-                    </div>
-                    <div class="about-card">
-                        <div class="card-icon">
-                            <i class="fas fa-mobile-alt"></i>
+                        <div>
+                            <strong>Gameplay</strong>
+                            <span>Core focus</span>
                         </div>
-                        <h3>Мобильные игры</h3>
-                        <p>Специализируюсь на разработке игр для Android и iOS с учетом особенностей платформ.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Мои проекты</h2>
-                <p class="section-subtitle">Портфолио разработанных игр</p>
-            </div>
-            
-            <!-- Project Filters -->
-            <div class="project-filters">
-                <button class="filter-btn active" data-filter="all">Все проекты</button>
-                <button class="filter-btn" data-filter="pc">PC</button>
-                <button class="filter-btn" data-filter="mobile">Mobile</button>
-                <button class="filter-btn" data-filter="web">Web</button>
+        <section id="projects" class="projects">
+            <div class="section-head">
+                <div>
+                    <p class="eyebrow">Selected work</p>
+                    <h2>Games that show range.</h2>
+                </div>
+                <div class="project-filters" aria-label="Project filters">
+                    <button class="filter-btn active" type="button" data-filter="all">All</button>
+                    <button class="filter-btn" type="button" data-filter="pc">PC</button>
+                    <button class="filter-btn" type="button" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" type="button" data-filter="web">Web</button>
+                </div>
             </div>
 
-            <!-- Projects Grid -->
             <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card" data-category="pc">
-                    <div class="project-image">
-                        <img src="https://img.itch.zone/aW1nLzE2MDE5NjY1LnBuZw==/original/gDHXoc.png" alt="Unionis">
-                        <div class="project-overlay">
-                            <div class="overlay-content">
-                                <a href="https://sharq-it.itch.io/unionis" class="project-link itch-link"><i class="fab fa-itch-io"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Unionis</h3>
-                        <p class="project-description">Digital miniature wargame. Multiplayer turn-based tactical strategy. PvP and PvE with procedural maps and squad customization.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">PC</span>
-                            <span class="tech-tag">Strategy</span>
-                            <span class="tech-tag">Multiplayer</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card" data-category="pc">
-                    <div class="project-image">
+                <article class="project-card feature" data-category="pc">
+                    <a class="project-image" href="https://store.steampowered.com/app/3179460/Ritualist/" target="_blank" rel="noreferrer">
                         <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3179460/header.jpg?t=1759786981" alt="Ritualist">
-                        <div class="project-overlay">
-                            <div class="overlay-content">
-                                <a href="https://store.steampowered.com/app/3179460/Ritualist/" class="project-link steam-link"><i class="fab fa-steam"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                        <span class="project-link"><i class="fab fa-steam"></i></span>
+                    </a>
                     <div class="project-content">
-                        <h3 class="project-title">Ritualist</h3>
-                        <p class="project-description">Dynamic isometric action-roguelike set in a unique dark fantasy world. Choose your weapons, master combat style, and face death as you uncover ancient rituals to seal away the Primordial Ones.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Steam</span>
-                            <span class="tech-tag">Action-Roguelike</span>
-                            <span class="tech-tag">Dark Fantasy</span>
+                        <div class="project-meta">
+                            <span>Steam</span>
+                            <span>Action-Roguelike</span>
                         </div>
+                        <h3>Ritualist</h3>
+                        <p>Dynamic isometric dark fantasy action-roguelike with build variety, weapon mastery, and ancient rituals.</p>
                     </div>
-                </div>
+                </article>
 
-                <!-- Project 3 -->
-                <div class="project-card" data-category="mobile">
-                    <div class="project-image">
+                <article class="project-card" data-category="pc">
+                    <a class="project-image" href="https://sharq-it.itch.io/unionis" target="_blank" rel="noreferrer">
+                        <img src="https://img.itch.zone/aW1nLzE2MDE5NjY1LnBuZw==/original/gDHXoc.png" alt="Unionis">
+                        <span class="project-link"><i class="fab fa-itch-io"></i></span>
+                    </a>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span>PC</span>
+                            <span>Strategy</span>
+                        </div>
+                        <h3>Unionis</h3>
+                        <p>Digital miniature wargame with turn-based PvP, PvE, procedural maps, and squad customization.</p>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="mobile">
+                    <a class="project-image" href="https://lazizgamedeveloper.itch.io/chrono-sphere" target="_blank" rel="noreferrer">
                         <img src="https://img.itch.zone/aW1nLzI0MDcyMDI2LnBuZw==/original/Cw5Ch%2F.png" alt="Chrono Sphere">
-                        <div class="project-overlay">
-                            <div class="overlay-content">
-                                <a href="https://lazizgamedeveloper.itch.io/chrono-sphere" class="project-link itch-link"><i class="fab fa-itch-io"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                        <span class="project-link"><i class="fab fa-itch-io"></i></span>
+                    </a>
                     <div class="project-content">
-                        <h3 class="project-title">Chrono Sphere</h3>
-                        <p class="project-description">Action game with time-slowing mechanics where the player controls a sphere to destroy enemy turrets</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Unity</span>
-                            <span class="tech-tag">Android</span>
-                            <span class="tech-tag">Action</span>
+                        <div class="project-meta">
+                            <span>Android</span>
+                            <span>Action</span>
                         </div>
+                        <h3>Chrono Sphere</h3>
+                        <p>Action game built around time-slowing movement and turret destruction.</p>
                     </div>
-                </div>
+                </article>
 
-                <!-- Project 4 -->
-                <!-- <div class="project-card" data-category="pc">
-                    <div class="project-image">
-                        <img src="https://img.itch.zone/aW1hZ2UvNDAxODcyMi8yMzk2NDk4My5wbmc=/original/FTlvuW.png" alt="Graves Keeper">
-                        <div class="project-overlay">
-                            <div class="overlay-content">
-                                <a href="https://lazizgamedeveloper.itch.io/graves-keeper" class="project-link itch-link"><i class="fab fa-itch-io"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Graves Keeper</h3>
-                        <p class="project-description">It's a reversed Arkanoid game where you have to defend your block graves from enemies! A really fun game I built for a game jam with the theme "Everything is Reversed!"</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Unity</span>
-                            <span class="tech-tag">Game Jam</span>
-                            <span class="tech-tag">Action</span>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- Project 5 -->
-                <div class="project-card" data-category="pc">
-                    <div class="project-image">
+                <article class="project-card" data-category="pc">
+                    <a class="project-image" href="https://lazizgamedeveloper.itch.io/backtrace" target="_blank" rel="noreferrer">
                         <img src="https://img.itch.zone/aW1hZ2UvMzU1OTkzNy8yMzg3MTYyNi5wbmc=/original/RuirmD.png" alt="Backtrace">
-                        <div class="project-overlay">
-                            <div class="overlay-content">
-                                <a href="https://lazizgamedeveloper.itch.io/backtrace" class="project-link itch-link"><i class="fab fa-itch-io"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                        <span class="project-link"><i class="fab fa-itch-io"></i></span>
+                    </a>
                     <div class="project-content">
-                        <h3 class="project-title">Backtrace</h3>
-                        <p class="project-description">Puzzle game with timetravel elements. OnlyFun! Игра которую я сделал за 48 часов для геймджема. Увлекательный пазл!</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Unity</span>
-                            <span class="tech-tag">Game Jam</span>
-                            <span class="tech-tag">Puzzle</span>
+                        <div class="project-meta">
+                            <span>Game Jam</span>
+                            <span>Puzzle</span>
                         </div>
+                        <h3>Backtrace</h3>
+                        <p>48-hour puzzle game with time-travel elements and compact level logic.</p>
                     </div>
-                </div>
+                </article>
 
-                <!-- Project 6 -->
-                <div class="project-card" data-category="pc">
-                    <div class="project-image">
+                <article class="project-card" data-category="pc">
+                    <a class="project-image" href="https://lazizgamedeveloper.itch.io/auto-batler-test-game" target="_blank" rel="noreferrer">
                         <img src="https://img.itch.zone/aW1hZ2UvMzk1NTkyMi8yMzU4MzAyNi5wbmc=/original/KLk1H8.png" alt="Auto Batler">
-                        <div class="project-overlay">
-                            <div class="overlay-content">
-                                <a href="https://lazizgamedeveloper.itch.io/auto-batler-test-game" class="project-link itch-link"><i class="fab fa-itch-io"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                        <span class="project-link"><i class="fab fa-itch-io"></i></span>
+                    </a>
                     <div class="project-content">
-                        <h3 class="project-title">Auto Batler | Test Game</h3>
-                        <p class="project-description">Игра сделанная для Lesta Games Academy. Автобатлер где вы прокачиваете своего героя и должны очистить священный лес от монстров затаившихся в её чащобах</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Unity</span>
-                            <span class="tech-tag">Lesta Academy</span>
-                            <span class="tech-tag">Strategy</span>
+                        <div class="project-meta">
+                            <span>Unity</span>
+                            <span>Strategy</span>
                         </div>
+                        <h3>Auto Batler</h3>
+                        <p>Lesta Games Academy test project about upgrading a hero and clearing a sacred forest.</p>
                     </div>
-                </div>
+                </article>
 
-                <!-- Project 7 -->
-                <div class="project-card" data-category="web mobile">
-                    <div class="project-image">
+                <article class="project-card" data-category="web mobile">
+                    <a class="project-image" href="https://lazizgamedeveloper.itch.io/my-taxi-business" target="_blank" rel="noreferrer">
                         <img src="https://img.itch.zone/aW1nLzIxMjUxNjk2LnBuZw==/original/6DFv2w.png" alt="My Taxi Business">
-                        <div class="project-overlay">
-                            <div class="overlay-content">
-                                <a href="https://lazizgamedeveloper.itch.io/my-taxi-business" class="project-link itch-link"><i class="fab fa-itch-io"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                        <span class="project-link"><i class="fab fa-itch-io"></i></span>
+                    </a>
                     <div class="project-content">
-                        <h3 class="project-title">My Taxi Business</h3>
-                        <p class="project-description">My Taxi Business is a game that made in 36 hours during Uzbekistan Creative Association gamejam. You can play in browser but i suggest to download .apk file for better experience</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Unity</span>
-                            <span class="tech-tag">Android</span>
-                            <span class="tech-tag">Simulation</span>
+                        <div class="project-meta">
+                            <span>Web / Android</span>
+                            <span>Simulation</span>
                         </div>
+                        <h3>My Taxi Business</h3>
+                        <p>36-hour gamejam simulation about building a small taxi business.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Связаться со мной</h2>
-                <p class="section-subtitle">Найдите меня в социальных сетях и на платформах</p>
+        <section id="contact" class="contact section-band">
+            <div>
+                <p class="eyebrow">Contact</p>
+                <h2>Open for projects, freelance work, and game collaborations.</h2>
             </div>
-            <div class="contact-content">
-                <div class="social-grid">
-                    <a href="https://github.com/LazizAbduhalimov" target="_blank" class="social-card github">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    
-                    <a href="https://lazizgamedeveloper.itch.io/" target="_blank" class="social-card itch">
-                        <i class="fas fa-gamepad"></i>
-                    </a>
-                    
-                    <a href="https://www.linkedin.com/in/laziz-abduhalimov-095546250/" target="_blank" class="social-card linkedin">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    
-                    <a href="https://t.me/laziz_abduhalimov" target="_blank" class="social-card telegram">
-                        <i class="fab fa-telegram"></i>
-                    </a>
-                    
-                    <a href="mailto:lazizabduhalimov35@gmail.com" class="social-card gmail">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-                
-                <div class="contact-cta">
-                    <h3>Готов к сотрудничеству!</h3>
-                    <p>Открыт для новых проектов, freelance заказов и интересных предложений. 
-                    Свяжитесь со мной удобным для вас способом!</p>
-                </div>
+            <div class="contact-links">
+                <a href="https://github.com/LazizAbduhalimov" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://lazizgamedeveloper.itch.io/" target="_blank" rel="noreferrer" aria-label="itch.io"><i class="fas fa-gamepad"></i></a>
+                <a href="https://www.linkedin.com/in/laziz-abduhalimov-095546250/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://t.me/laziz_abduhalimov" target="_blank" rel="noreferrer" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                <a href="mailto:lazizabduhalimov35@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <p>&copy; 2025 Laziz Abduhalimov. Все права защищены.</p>
-                </div>
-                <div class="footer-right">
-                    <div class="social-links">
-                        <a href="https://github.com/LazizAbduhalimov" target="_blank" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/laziz-abduhalimov-095546250/" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://t.me/laziz_abduhalimov" target="_blank" class="social-link" title="Telegram"><i class="fab fa-telegram"></i></a>
-                        <a href="https://lazizgamedeveloper.itch.io/" target="_blank" class="social-link" title="itch.io"><i class="fas fa-gamepad"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <span>2026 Laziz Abduhalimov</span>
+        <a href="#home">Back to top</a>
     </footer>
 
     <script src="script.js"></script>
