@@ -7,11 +7,12 @@
     <title>Laziz Abduhalimov | Game Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="site-glow" aria-hidden="true"></div>
     <header class="site-header">
         <a href="#home" class="brand" aria-label="Laziz Abduhalimov home">
             <span class="brand-mark">LA</span>
@@ -32,23 +33,34 @@
 
     <main>
         <section id="home" class="hero">
+            <div class="hero-orbit" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div class="hero-copy">
-                <p class="eyebrow">Unity Developer / Systems / Game Feel</p>
-                <h1>I build game ideas into finished experiences.</h1>
+                <p class="eyebrow">Unity Developer / Arcade Pulse / Game Feel</p>
+                <h1>Game systems with an arcade pulse.</h1>
                 <p class="hero-text">
                     Indie game developer focused on Unity, PC, web, and mobile projects.
                     I like tactical decisions, readable systems, and games that feel good from the first input.
                 </p>
+                <div class="hero-badges" aria-label="Core skills">
+                    <span>Unity</span>
+                    <span>Combat loops</span>
+                    <span>Mobile</span>
+                    <span>Game jams</span>
+                </div>
                 <div class="hero-actions">
                     <a class="button primary" href="#projects">View projects</a>
-                    <a class="button secondary" href="mailto:lazizabduhalimov35@gmail.com">Contact me</a>
+                    <a class="button secondary" href="#contact">Contact me</a>
                 </div>
             </div>
 
             <aside class="hero-panel" aria-label="Featured game">
                 <div class="panel-top">
                     <span>Featured</span>
-                    <span>Steam</span>
+                    <span class="live-dot">Steam</span>
                 </div>
                 <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3179460/header.jpg?t=1759786981" alt="Ritualist game key art">
                 <div class="panel-bottom">
@@ -82,6 +94,10 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="build-log" aria-label="Build log">
+                <span>Current build</span>
+                <strong>Fast prototypes, readable systems, satisfying feedback.</strong>
             </div>
         </section>
 
